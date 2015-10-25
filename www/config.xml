@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.gamingplatform.tictactoe"
+        versionCode = "7"
+        version     = "1.0.0" >
+
+    <name>Tic Tac Toe</name>
+
+    <description>
+        A multiplayer Tic Tac Toe game.
+    </description>
+
+    <author href="http://yoav-zibin.github.io/homepage/" email="yoav.zibin@gmail.com">
+        Yoav Zibin
+    </author>
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="phonegap-version"           value="cli-5.2.0" />
+    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="target-device"              value="universal" />      <!-- ios: possible values handset, tablet, or universal -->
+    <preference name="prerendered-icon"           value="false" />          <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="deployment-target"          value="7.0" />            <!-- ios: This sets the IPHONEOS_DEPLOYMENT_TARGET in the build, which tranlsates to the MinimumOSVersion in the ipa Propertly List. -->
+    <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+
+    <icon src="icon.png" width="128" height="128"/>
+    <gap:splash src="icon.png" width="128" height="128"/>
+
+    <!--
+      See: https://github.com/apache/cordova-plugin-whitelist
+      So you can load an iframe with the game platform.
+    -->
+    <access origin="*"/>
+    <allow-navigation href="http://*/*" />
+    <allow-intent href="*" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+
+    <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
+    <gap:plugin name="phonegap-plugin-push" source="npm" version="1.2.3" />
+
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" source="pgb" version="0.9.0">
+        <param name="APP_ID" value="1505618116376825" />
+        <param name="APP_NAME" value="Tic Tac Toe" />
+    </gap:plugin>
+</widget>

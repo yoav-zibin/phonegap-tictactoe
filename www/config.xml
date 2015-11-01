@@ -39,7 +39,7 @@
     <access origin="*"/>
     <allow-navigation href="http://*/*" />
     <allow-intent href="*" />
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
 
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
     <gap:plugin name="phonegap-plugin-push" source="npm" version="1.2.3" />

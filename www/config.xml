@@ -42,12 +42,23 @@
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:splash src="splash-512.png" width="512" height="512"/>
+    <gap:splash src="splash.png" width="512" height="512"/>
+    <!-- iPhone and iPod touch -->
     <gap:splash src="splash-320x480.png" gap:platform="ios" width="320" height="480" />
     <gap:splash src="splash-640x960.png" gap:platform="ios" width="640" height="960" />
+    <!-- iPhone 5 / iPod Touch (5th Generation) -->
     <gap:splash src="splash-640x1136.png" gap:platform="ios" width="640" height="1136" />
+    <!-- iPad -->
     <gap:splash src="splash-768x1024.png" gap:platform="ios" width="768" height="1024" />
     <gap:splash src="splash-1024x768.png" gap:platform="ios" width="1024" height="768" />
+    <!-- iPhone 6 -->
+    <gap:splash src="splash-750x1334.png" gap:platform="ios" width="750" height="1334" />
+    <gap:splash src="splash-1242x2208.png" gap:platform="ios" width="1242" height="2208" />
+    <gap:splash src="splash-2208x1242.png" gap:platform="ios" width="2208" height="1242" />
+    <!-- Retina iPad -->
+    <gap:splash src="splash-1536x2048.png" gap:platform="ios" width="1536" height="2048" />
+    <gap:splash src="splash-2048x1536.png" gap:platform="ios" width="2048" height="1536" />
+
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
     </gap:config-file>

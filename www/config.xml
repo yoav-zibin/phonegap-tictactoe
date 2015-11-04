@@ -5,7 +5,10 @@
         id          = "com.gamingplatform.tictactoe"
         versionCode = "8"
         version     = "1.0.0" >
-    <!-- versionCode is optional and Android only: needs to be increased every time you submit a new APK version. -->
+    <!-- versionCode is optional and Android only:
+      needs to be increased every time you submit a new APK version.
+      see: http://developer.android.com/tools/publishing/versioning.html
+    -->
 
     <name>Tic Tac Toe</name>
 

@@ -35,7 +35,7 @@
         }
         document.addEventListener('deviceready', onDeviceReady, false);
         if (window.location.search == "?test") {
-          document.body.addEventListener("load", onDeviceReady);
+          window.addEventListener("load", onDeviceReady);
         }
         </script>
         <img id="loader" src="animatedEllipse.gif">

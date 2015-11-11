@@ -34,6 +34,9 @@
             "http://www.multiplayer-gaming.com/v1/dist/index.html?onlyGameId=5125637257822208-1";
         }
         document.addEventListener('deviceready', onDeviceReady, false);
+        if (window.location == "?test") {
+          document.body.addEventListener("load", onDeviceReady);
+        }
         </script>
         <img id="loader" src="animatedEllipse.gif">
         <iframe id="platform_iframe"

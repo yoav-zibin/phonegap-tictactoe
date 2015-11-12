@@ -10,7 +10,7 @@
         html, body, iframe, div { margin: 0; padding: 0; width: 100%; height: 100%; }
         #platform_iframe { position:fixed; display:none; border:none; }
         #loader { position: absolute; display:block; left: 0; top: 0; right: 0; bottom: 0; margin: auto; }
-        #platform_iframe_container {-webkit-overflow-scrolling: touch; overflow-y: scroll; }
+        #platform_iframe_container {-webkit-overflow-scrolling: touch !important; overflow-y: scroll !important; }
         </style>
     </head>
     <body>
@@ -44,6 +44,7 @@
           window.addEventListener("load", onDeviceReady);
         }
         </script>
+        <h1>Attempt2</h1>
         <img id="loader" src="animatedEllipse.gif">
         <div id="platform_iframe_container"></div>
     </body>

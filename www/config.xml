@@ -121,6 +121,6 @@
         <allow-intent href="itms-apps:*" />
     </platform>
 
-    <gap:plugin name="com.darktalker.cordova.screenshot" />
-    <gap:plugin name="nl.x-services.plugins.socialsharing" />
+    <gap:plugin name="com.darktalker.cordova.screenshot" source="npm" />
+    <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.0" />
 </widget>

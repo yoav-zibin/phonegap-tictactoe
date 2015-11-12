@@ -120,4 +120,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+
+    <preference name="android-build-tool" value="gradle" />
+    <gap:plugin name="cordova-plugin-admobpro" source="npm" />
 </widget>

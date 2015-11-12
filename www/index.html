@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
         <style>
         html, body, iframe, div { margin: 0; padding: 0; width: 100%; height: 100%; }
-        #platform_iframe { position:fixed; display:none; border:none; }
+        #platform_iframe { display:none; border:none; }
         #loader { position: absolute; display:block; left: 0; top: 0; right: 0; bottom: 0; margin: auto; }
         #platform_iframe_container {-webkit-overflow-scrolling: touch; overflow-y: scroll; }
         </style>
@@ -44,11 +44,6 @@
           window.addEventListener("load", onDeviceReady);
         }
         </script>
-        <h1>Attempt3</h1>
-        <div style="-webkit-overflow-scrolling: touch; overflow-y: scroll; width: 200px; height: 200px;">
-        	<iframe src="http://www.multiplayer-gaming.com/v1/dist/"></iframe>
-        </div>
-        <h1>Attempt3</h1>
         <img id="loader" src="animatedEllipse.gif">
         <div id="platform_iframe_container"></div>
     </body>

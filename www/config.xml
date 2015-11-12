@@ -121,6 +121,6 @@
         <allow-intent href="itms-apps:*" />
     </platform>
 
-    <gap:plugin name="it.zerob.cordova.screenshot" version="0.1.3" />
-    <gap:plugin name="nl.x-services.plugins.socialsharing" />
+    <gap:plugin name="it.zerob.cordova.screenshot" source="pgb" version="0.1.3" />
+    <gap:plugin name="nl.x-services.plugins.socialsharing" source="pgb" version="4.3.0" />
 </widget>

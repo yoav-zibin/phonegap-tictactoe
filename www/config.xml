@@ -4,7 +4,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.gamingplatform.tictactoe"
         versionCode = "9"
-        version     = "1.0.1" >
+        version     = "2.0.0" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
       see: http://developer.android.com/tools/publishing/versioning.html

@@ -93,36 +93,10 @@
       So you can load an iframe with the game platform.
     -->
     <access origin="*"/>
-    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
-    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
-    <allow-navigation href="http://*/*" />
-    <allow-navigation href="https://*/*" />
-    <allow-intent href="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
 
-    <!-- To launch the app by a link like this:
-        tictactoe://
-        For android, see
-          https://appurl.org/docs-handling-android
-        For iOS, see
-          http://docs.build.phonegap.com/en_US/configuring_custom_urls.md.html
-    -->
     <gap:config-file platform="android" parent="/manifest/application" mode="add" >
       <!-- registers to receive SEND and VIEW intents from other apps -->
-      <activity android:name="tictactoe" android:label="@string/app_name">
+      <activity android:name="com.gamingplatform.tictactoe.TicTacToe" android:label="Tic Tac Toe">
         <intent-filter>
           <action android:name="android.intent.action.VIEW"/>
           <category android:name="android.intent.category.DEFAULT"/>

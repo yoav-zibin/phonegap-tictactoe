@@ -133,16 +133,19 @@
 
     <!-- To launch the app by a link like this:
         tictactoe://
-      https://build.phonegap.com/plugins/693
-      https://github.com/machenmusik/LaunchMyApp-PhoneGap-Plugin/
-      See also: http://developer.android.com/guide/topics/manifest/data-element.html
-      <scheme>://<host>:<port>[<path>|<pathPrefix>|<pathPattern>]
     -->
-    <gap:plugin name="nl.x-services.plugins.launchmyapp">
-        <param name="URL_SCHEME" value="tictactoe" />
-        <param name="HTTP_HOST" value="p.com" />
-        <param name="HTTP_PATHPREFIX" value="/p" />
-        <param name="HTTPS_HOST" value="p.com" />
-        <param name="HTTPS_PATHPREFIX" value="/p" />
-    </gap:plugin>
+    <gap:config-file platform="android" parent="/manifest/application" mode="add" >
+      <!-- registers to receive SEND and VIEW intents from other apps -->
+      <activity android:name="tictactoe" android:label="@string/app_name">
+        <intent-filter>
+          <action android:name="android.intent.action.VIEW"/>
+          <category android:name="android.intent.category.DEFAULT"/>
+          <category android:name="android.intent.category.BROWSABLE"/>
+          <data android:scheme="tictactoe"/>
+        </intent-filter>
+      </activity>
+    </gap:config-file>
+    <gap:url-scheme role="None">
+      <scheme>tictactoe</scheme>
+    </gap:url-scheme>
 </widget>

@@ -130,8 +130,7 @@
 
     <!-- Adds 20MB to APK, but brings consistency and performance:
       http://phonegap.com/blog/2015/06/16/phonegap-updated-on-build/
-      TODO: find a way to disable pull-to-refresh, see
-      https://crosswalk-project.org/jira/browse/XWALK-4697
+      It took me a while to find a way to disable pull-to-refresh, see
       http://community.phonegap.com/nitobi/topics/how-to-disable-pull-to-refresh-on-crosswalk-in-phonegap-build-system
      -->
     <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-adapt" source="npm" version="1.4.0-dev-10">

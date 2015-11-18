@@ -139,12 +139,13 @@
 
     <!-- To launch the app by a link like this (you can't type it in directly in the browser! it has to be a link on a webpage):
         tictactoe://
-        For android, see
-          https://appurl.org/docs-handling-android
         For iOS, see
           http://docs.build.phonegap.com/en_US/configuring_custom_urls.md.html
-
-        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+        For android, see
+          https://appurl.org/docs-handling-android
+        Additionally in Android, to avoid restarting the app after rotation (i.e., orientation change),
+        I added this to the activity:
+          android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
     -->
     <gap:config-file platform="android" parent="/manifest/application" mode="add" >
       <activity
@@ -158,7 +159,7 @@
         </intent-filter>
       </activity>
     </gap:config-file>
-    <gap:url-scheme role="None">
+    <gap:url-scheme>
       <scheme>tictactoe</scheme>
     </gap:url-scheme>
 </widget>

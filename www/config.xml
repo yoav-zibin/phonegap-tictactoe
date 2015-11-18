@@ -147,7 +147,9 @@
         android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
     -->
     <gap:config-file platform="android" parent="/manifest/application" mode="add" >
-      <activity android:name=".TicTacToe" android:label="Tic Tac Toe">
+      <activity
+          android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+          android:name=".TicTacToe" android:label="Tic Tac Toe">
         <intent-filter>
           <action android:name="android.intent.action.VIEW"/>
           <category android:name="android.intent.category.DEFAULT"/>

@@ -143,9 +143,11 @@
           https://appurl.org/docs-handling-android
         For iOS, see
           http://docs.build.phonegap.com/en_US/configuring_custom_urls.md.html
+
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
     -->
     <gap:config-file platform="android" parent="/manifest/application" mode="add" >
-      <activity android:name="com.gamingplatform.tictactoe.TicTacToe" android:label="Tic Tac Toe">
+      <activity android:name=".TicTacToe" android:label="Tic Tac Toe">
         <intent-filter>
           <action android:name="android.intent.action.VIEW"/>
           <category android:name="android.intent.category.DEFAULT"/>

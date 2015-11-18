@@ -130,12 +130,8 @@
 
     <!-- Adds 20MB to APK, but brings consistency and performance:
       http://phonegap.com/blog/2015/06/16/phonegap-updated-on-build/
-      It took me a while to find a way to disable pull-to-refresh, see
-      http://community.phonegap.com/nitobi/topics/how-to-disable-pull-to-refresh-on-crosswalk-in-phonegap-build-system
      -->
-    <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-adapt" source="npm" version="1.4.0-dev-10">
-        <param name="XWALK_COMMANDLINE" value="--disable-pull-to-refresh-effect" />
-    </gap:plugin>
+    <gap:plugin name='org.crosswalk.engine' version='1.3.0' source='pgb' />
 
     <!-- To launch the app by a link like this (you can't type it in directly in the browser! it has to be a link on a webpage):
         tictactoe://

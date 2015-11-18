@@ -2,6 +2,7 @@
 <!-- See: https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
+        xmlns:android   = "http://schemas.android.com/apk/res/android"
         id          = "com.gamingplatform.tictactoe"
         versionCode = "11"
         version     = "4.0.0" >
@@ -133,6 +134,10 @@
 
     <!-- To launch the app by a link like this:
         tictactoe://
+        For android, see
+          https://appurl.org/docs-handling-android
+        For iOS, see
+          http://docs.build.phonegap.com/en_US/configuring_custom_urls.md.html
     -->
     <gap:config-file platform="android" parent="/manifest/application" mode="add" >
       <!-- registers to receive SEND and VIEW intents from other apps -->

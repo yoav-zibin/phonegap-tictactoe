@@ -133,9 +133,8 @@
       Known issue: no good way to disable pull-to-refresh, see:
       http://community.phonegap.com/nitobi/topics/how-to-disable-pull-to-refresh-on-crosswalk-in-phonegap-build-system
      -->
-    <gap:plugin name='org.crosswalk.engine' version='1.3.0' source='pgb'>
-        <param name="XWALK_COMMANDLINE" value="--disable-pull-to-refresh-effect" />
-    </gap:plugin>
+     <gap:plugin name="cordova-plugin-crosswalk-webview" source="npm" />
+
 
     <!-- To launch the app by a link like this (you can't type it in directly in the browser! it has to be a link on a webpage):
         tictactoe://

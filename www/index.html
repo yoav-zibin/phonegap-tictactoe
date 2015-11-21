@@ -11,6 +11,8 @@
         #loader { position: absolute; display:block; left: 0; top: 0; right: 0; bottom: 0; margin: auto; }
         #platform_iframe { display:block; border:none; z-index:100000002; }
         #platform_iframe_container {-webkit-overflow-scrolling: touch; overflow-y: scroll; display: block; z-index:100000001; position:fixed; top: 0px; right: 0px; }
+        /* To prevent long-press that will bring up copy-paste dialog. */
+        * { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; -moz-touch-callout: none; -ms-touch-callout: none; touch-callout: none; }
         </style>
     </head>
     <body>

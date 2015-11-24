@@ -35,7 +35,7 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="cli-5.2.0" />
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
     <preference name="target-device"              value="universal" />      <!-- ios: possible values handset, tablet, or universal -->
     <preference name="prerendered-icon"           value="false" />          <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="detect-data-types"          value="false" />          <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->

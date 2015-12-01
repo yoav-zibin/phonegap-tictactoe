@@ -5,13 +5,13 @@
         xmlns:android   = "http://schemas.android.com/apk/res/android"
         id          = "com.gamingplatform.tictactoe"
         versionCode = "13"
-        version     = "6.0.0" >
+        version     = "7.0.0" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
       see: http://developer.android.com/tools/publishing/versioning.html
     -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>600</string>
+      <string>700</string>
     </gap:config-file>
 
     <name>Tic Tac Toe</name>
@@ -49,6 +49,14 @@
     <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-targetSdkVersion"   value="14" />             <!-- To hide the "..." (overflow menu) on Android, see http://stackoverflow.com/questions/20375626/disabling-android-menu-button-in-phonegap-build -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+
+    <!-- Hiding status bar on ios, see http://stackoverflow.com/questions/20734117/how-to-remove-ios-status-bar-with-phonegap-build -->
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+        <false/>
+    </gap:config-file>
+    <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true">
+        <true/>
+    </gap:config-file>
 
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:splash src="splash-512x512.png" width="512" height="512"/>

@@ -51,7 +51,7 @@
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:splash src="splash.png" width="512" height="512"/>
+    <gap:splash src="splash-512x512.png" width="512" height="512"/>
     <!-- iPhone and iPod touch -->
     <gap:splash src="splash-320x480.png" gap:platform="ios" width="320" height="480" />
     <gap:splash src="splash-640x960.png" gap:platform="ios" width="640" height="960" />

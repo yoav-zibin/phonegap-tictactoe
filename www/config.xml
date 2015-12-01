@@ -4,7 +4,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
         id          = "com.gamingplatform.tictactoe"
-        versionCode = "13"
+        versionCode = "14"
         version     = "7.0.0" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
@@ -59,7 +59,6 @@
     </gap:config-file>
 
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:splash src="splash-512x512.png" width="512" height="512"/>
     <!-- iPhone and iPod touch -->
     <gap:splash src="splash-320x480.png" gap:platform="ios" width="320" height="480" />
     <gap:splash src="splash-640x960.png" gap:platform="ios" width="640" height="960" />

@@ -4,24 +4,19 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
         id          = "com.gamingplatform.tictactoe"
-        versionCode = "14"
-        version     = "7.0.0" >
+        versionCode = "15"
+        version     = "15.0.0" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
       see: http://developer.android.com/tools/publishing/versioning.html
     -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-      <string>700</string>
+      <string>1500</string>
     </gap:config-file>
 
-    <name>Tic Tac Toe</name>
-
-    <description>
-        A multiplayer Tic Tac Toe game.
-    </description>
-
-    <author href="http://yoav-zibin.github.io/homepage/" email="yoav.zibin@gmail.com">
-        Yoav Zibin
+    <name>Tic-Tac_Toe y!z?.+@#$%^&amp;*()~`'"&lt;&gt;[],/\|{}123=;:Boo</name>
+    <author email="yoav.zibin@gmail.com">
+        yoav.zibin@gmail.com
     </author>
 
     <!--
@@ -59,41 +54,45 @@
     </gap:config-file>
 
     <gap:plugin name="org.apache.cordova.splashscreen" />
+    <!-- I only want splash screen for iOS because it's mandatory. I don't think it's needed.
+      Moreover, on Android, the splash screen gets stretched which is ugly,
+      unless you use the more complex 9-patch png format. -->
+    <splash src="pgbomit/splash-white-1x1.png" />
     <!-- iPhone and iPod touch -->
-    <gap:splash src="splash-320x480.png" gap:platform="ios" width="320" height="480" />
-    <gap:splash src="splash-640x960.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="pgbomit/splash-320x480.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="pgbomit/splash-640x960.png" gap:platform="ios" width="640" height="960" />
     <!-- iPhone 5 / iPod Touch (5th Generation) -->
-    <gap:splash src="splash-640x1136.png" gap:platform="ios" width="640" height="1136" />
+    <gap:splash src="pgbomit/splash-640x1136.png" gap:platform="ios" width="640" height="1136" />
     <!-- iPad -->
-    <gap:splash src="splash-768x1024.png" gap:platform="ios" width="768" height="1024" />
-    <gap:splash src="splash-1024x768.png" gap:platform="ios" width="1024" height="768" />
+    <gap:splash src="pgbomit/splash-768x1024.png" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="pgbomit/splash-1024x768.png" gap:platform="ios" width="1024" height="768" />
     <!-- iPhone 6 -->
-    <gap:splash src="splash-750x1334.png" gap:platform="ios" width="750" height="1334" />
-    <gap:splash src="splash-1242x2208.png" gap:platform="ios" width="1242" height="2208" />
-    <gap:splash src="splash-2208x1242.png" gap:platform="ios" width="2208" height="1242" />
+    <gap:splash src="pgbomit/splash-750x1334.png" gap:platform="ios" width="750" height="1334" />
+    <gap:splash src="pgbomit/splash-1242x2208.png" gap:platform="ios" width="1242" height="2208" />
+    <gap:splash src="pgbomit/splash-2208x1242.png" gap:platform="ios" width="2208" height="1242" />
     <!-- Retina iPad -->
-    <gap:splash src="splash-1536x2048.png" gap:platform="ios" width="1536" height="2048" />
-    <gap:splash src="splash-2048x1536.png" gap:platform="ios" width="2048" height="1536" />
+    <gap:splash src="pgbomit/splash-1536x2048.png" gap:platform="ios" width="1536" height="2048" />
+    <gap:splash src="pgbomit/splash-2048x1536.png" gap:platform="ios" width="2048" height="1536" />
 
-    <icon src="icon-512.png" width="512" height="512"/>
-    <icon src="icon-57.png" gap:platform="ios" width="57" height="57" />
-    <icon src="icon-72.png" gap:platform="ios" width="72" height="72" />
-    <icon src="icon-114.png" gap:platform="ios" width="114" height="114" />
-    <icon src="icon-144.png" gap:platform="ios" width="144" height="144" />
+    <icon src="pgbomit/icon-512.png" width="512" height="512"/>
+    <icon src="pgbomit/icon-57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="pgbomit/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="pgbomit/icon-114.png" gap:platform="ios" width="114" height="114" />
+    <icon src="pgbomit/icon-144.png" gap:platform="ios" width="144" height="144" />
     <!-- iPhone 6 / 6+ -->
-    <icon src="icon-180.png" gap:platform="ios" width="180" height="180" />
+    <icon src="pgbomit/icon-180.png" gap:platform="ios" width="180" height="180" />
     <!-- iPhone / iPod Touch  -->
-    <icon src="icon-60.png" gap:platform="ios" width="60" height="60" />
-    <icon src="icon-120.png" gap:platform="ios" width="120" height="120" />
+    <icon src="pgbomit/icon-60.png" gap:platform="ios" width="60" height="60" />
+    <icon src="pgbomit/icon-120.png" gap:platform="ios" width="120" height="120" />
     <!-- iPad -->
-    <icon src="icon-76.png" gap:platform="ios" width="76" height="76" />
-    <icon src="icon-152.png" gap:platform="ios" width="152" height="152" />
+    <icon src="pgbomit/icon-76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="pgbomit/icon-152.png" gap:platform="ios" width="152" height="152" />
     <!-- Settings Icon -->
-    <icon src="icon-29.png" gap:platform="ios" width="29" height="29" />
-    <icon src="icon-58.png" gap:platform="ios" width="58" height="58" />
+    <icon src="pgbomit/icon-29.png" gap:platform="ios" width="29" height="29" />
+    <icon src="pgbomit/icon-58.png" gap:platform="ios" width="58" height="58" />
     <!-- Spotlight Icon -->
-    <icon src="icon-40.png" gap:platform="ios" width="40" height="40" />
-    <icon src="icon-80.png" gap:platform="ios" width="80" height="80" />
+    <icon src="pgbomit/icon-40.png" gap:platform="ios" width="40" height="40" />
+    <icon src="pgbomit/icon-80.png" gap:platform="ios" width="80" height="80" />
 
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
     <gap:plugin name="phonegap-plugin-push" source="npm" version="1.2.3" />

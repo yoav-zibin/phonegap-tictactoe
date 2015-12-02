@@ -58,7 +58,7 @@
       Moreover, on Android, the splash screen gets stretched which is ugly,
       unless you use the more complex 9-patch png format.
       If you really want to use one for Android, use a simple white splash:
-      <splash src="" pgbomit/splash-white-1x1.png />
+      <splash src="pgbomit/splash-white-1x1.png" />
     -->
     <!-- iPhone and iPod touch -->
     <gap:splash src="pgbomit/splash-320x480.png" gap:platform="ios" width="320" height="480" />

@@ -146,19 +146,13 @@
         Additionally in Android, to avoid restarting the app after rotation (i.e., orientation change),
         I added this to the activity:
           android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-        Do not add to the activity:
-          android:launchMode="singleTask"
-        because starting the app from a gameinvite won't restart the app,
-        and then the player won't see the gameinvite if the app was open (the app will continue from the state it was).
-        In gameinvite we launch the app using this:
-          intent://#Intent;package=com.gamingplatform.tictactoe;scheme=tictactoe;launchFlags=268435456;end;
-        which restarts the app due to the launchFlags.
     -->
     <gap:config-file platform="android" parent="/manifest/application" mode="add" >
       <activity
           android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
           android:name=".TicTacToe" android:label="@string/app_name"
           android:screenOrientation="unspecified"
+          android:launchMode="singleTask"
           android:windowSoftInputMode="adjustUnspecified|stateUnspecified">
         <intent-filter>
           <action android:name="android.intent.action.MAIN"/>

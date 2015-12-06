@@ -132,6 +132,7 @@
 
     <!-- To take printscreen for sharing/feedback. Requires WRITE_EXTERNAL_STORAGE permission.
       https://github.com/gitawego/cordova-screenshot.git
+      https://www.npmjs.com/package/com.darktalker.cordova.screenshot
       https://build.phonegap.com/plugins/2828 -->
     <gap:plugin name="com.darktalker.cordova.screenshot" source="npm" />
 

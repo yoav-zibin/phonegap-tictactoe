@@ -38,7 +38,7 @@
           // Set the HTML (instead of the iframe src) to prevent history changes (so "back" will work correctly).
           document.getElementById("platform_iframe_container").innerHTML =
             '<iframe id="platform_iframe" src="http://www.multiplayer-gaming.com/v1/dist/index.html?onlyGameId=' +
-            GAME_ID + '" frameborder="0" seamless="seamless"></iframe>';
+            GAME_ID + '" seamless="seamless"></iframe>';
         }
         document.addEventListener('deviceready', onDeviceReady, false);
         if (!window.cordova) {

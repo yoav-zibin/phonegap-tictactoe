@@ -41,11 +41,135 @@
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
-    <preference name="android-minSdkVersion"      value="19" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-    <preference name="android-targetSdkVersion"   value="19" />             <!-- To hide the "..." (overflow menu) on Android, see http://stackoverflow.com/questions/20375626/disabling-android-menu-button-in-phonegap-build -->
+    <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-targetSdkVersion"   value="14" />             <!-- To hide the "..." (overflow menu) on Android, see http://stackoverflow.com/questions/20375626/disabling-android-menu-button-in-phonegap-build -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 
-    <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
-    <gap:plugin name="phonegap-plugin-push" source="npm" />
+    <!-- Hiding status bar on ios, see http://stackoverflow.com/questions/20734117/how-to-remove-ios-status-bar-with-phonegap-build -->
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+        <false/>
+    </gap:config-file>
+    <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true">
+        <true/>
+    </gap:config-file>
 
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <!-- I only want splash screen for iOS because it's mandatory. I don't think it's needed.
+      Moreover, on Android, the splash screen gets stretched which is ugly,
+      unless you use the more complex 9-patch png format.
+      If you really want to use one for Android, use a simple white splash:
+      <splash src="pgbomit/splash-white-1x1.png" />
+    -->
+    <!-- iPhone and iPod touch -->
+    <gap:splash src="pgbomit/splash-320x480.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="pgbomit/splash-640x960.png" gap:platform="ios" width="640" height="960" />
+    <!-- iPhone 5 / iPod Touch (5th Generation) -->
+    <gap:splash src="pgbomit/splash-640x1136.png" gap:platform="ios" width="640" height="1136" />
+    <!-- iPad -->
+    <gap:splash src="pgbomit/splash-768x1024.png" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="pgbomit/splash-1024x768.png" gap:platform="ios" width="1024" height="768" />
+    <!-- iPhone 6 -->
+    <gap:splash src="pgbomit/splash-750x1334.png" gap:platform="ios" width="750" height="1334" />
+    <gap:splash src="pgbomit/splash-1242x2208.png" gap:platform="ios" width="1242" height="2208" />
+    <gap:splash src="pgbomit/splash-2208x1242.png" gap:platform="ios" width="2208" height="1242" />
+    <!-- Retina iPad -->
+    <gap:splash src="pgbomit/splash-1536x2048.png" gap:platform="ios" width="1536" height="2048" />
+    <gap:splash src="pgbomit/splash-2048x1536.png" gap:platform="ios" width="2048" height="1536" />
+
+    <icon src="pgbomit/icon-512.png" width="512" height="512"/>
+    <icon src="pgbomit/icon-57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="pgbomit/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="pgbomit/icon-114.png" gap:platform="ios" width="114" height="114" />
+    <icon src="pgbomit/icon-144.png" gap:platform="ios" width="144" height="144" />
+    <!-- iPhone 6 / 6+ -->
+    <icon src="pgbomit/icon-180.png" gap:platform="ios" width="180" height="180" />
+    <!-- iPhone / iPod Touch  -->
+    <icon src="pgbomit/icon-60.png" gap:platform="ios" width="60" height="60" />
+    <icon src="pgbomit/icon-120.png" gap:platform="ios" width="120" height="120" />
+    <!-- iPad -->
+    <icon src="pgbomit/icon-76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="pgbomit/icon-152.png" gap:platform="ios" width="152" height="152" />
+    <!-- Settings Icon -->
+    <icon src="pgbomit/icon-29.png" gap:platform="ios" width="29" height="29" />
+    <icon src="pgbomit/icon-58.png" gap:platform="ios" width="58" height="58" />
+    <!-- Spotlight Icon -->
+    <icon src="pgbomit/icon-40.png" gap:platform="ios" width="40" height="40" />
+    <icon src="pgbomit/icon-80.png" gap:platform="ios" width="80" height="80" />
+
+    <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
+    <gap:plugin name="phonegap-plugin-push" source="npm" version="1.2.3" />
+
+    <!-- see: https://build.phonegap.com/plugins/1246 -->
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" source="pgb" version="0.9.0">
+        <param name="APP_ID" value="1505618116376825" />
+        <param name="APP_NAME" value="Tic Tac Toe" />
+    </gap:plugin>
+
+    <!--
+      See: https://github.com/apache/cordova-plugin-whitelist
+      So you can load an iframe with the game platform.
+    -->
+    <access origin="*"/>
+    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
+    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+    <!-- To take printscreen for sharing/feedback. Requires WRITE_EXTERNAL_STORAGE permission.
+      https://github.com/gitawego/cordova-screenshot.git
+      https://www.npmjs.com/package/com.darktalker.cordova.screenshot
+      https://build.phonegap.com/plugins/2828 -->
+    <gap:plugin name="com.darktalker.cordova.screenshot" source="npm" />
+
+    <!-- To allow easy social sharing using native intents. Requires WRITE_EXTERNAL_STORAGE permission.
+      https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin -->
+    <gap:plugin name="nl.x-services.plugins.socialsharing" source="pgb" version="4.3.0" />
+
+    <!-- To launch the app by a link like this (you can't type it in directly in the browser! it has to be a link on a webpage):
+        tictactoe://
+        For iOS, see
+          http://docs.build.phonegap.com/en_US/configuring_custom_urls.md.html
+        For android, see
+          https://appurl.org/docs-handling-android
+        Additionally in Android, to avoid restarting the app after rotation (i.e., orientation change),
+        I added this to the activity:
+          android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+    -->
+    <gap:config-file platform="android" parent="/manifest/application" mode="add" >
+      <activity
+          android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+          android:name=".TicTacToe" android:label="@string/app_name"
+          android:screenOrientation="unspecified"
+          android:launchMode="singleTask"
+          android:windowSoftInputMode="adjustUnspecified|stateUnspecified">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN"/>
+          <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+        <intent-filter>
+          <action android:name="android.intent.action.VIEW"/>
+          <category android:name="android.intent.category.DEFAULT"/>
+          <category android:name="android.intent.category.BROWSABLE"/>
+          <data android:scheme="tictactoe"/>
+        </intent-filter>
+      </activity>
+    </gap:config-file>
+    <gap:url-scheme>
+      <scheme>tictactoe</scheme>
+    </gap:url-scheme>
 </widget>

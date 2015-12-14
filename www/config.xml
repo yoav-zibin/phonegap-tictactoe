@@ -101,6 +101,12 @@
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
     <gap:plugin name="phonegap-plugin-push" source="npm" />
 
+    <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 -->
+    <gap:plugin name="cordova-plugin-facebook4" source="npm">
+        <param name="APP_ID" value="1505618116376825" />
+        <param name="APP_NAME" value="Tic Tac Toe" />
+    </gap:plugin>
+
     <!--
       See: https://github.com/apache/cordova-plugin-whitelist
       So you can load an iframe with the game platform.
@@ -126,4 +132,17 @@
         <allow-intent href="itms-apps:*" />
     </platform>
 
+    <!-- To take printscreen for sharing/feedback. Requires WRITE_EXTERNAL_STORAGE permission.
+      https://github.com/gitawego/cordova-screenshot.git
+      https://www.npmjs.com/package/com.darktalker.cordova.screenshot -->
+    <gap:plugin name="com.darktalker.cordova.screenshot" source="npm" />
+
+    <!-- To allow easy social sharing using native intents. Requires WRITE_EXTERNAL_STORAGE permission.
+      https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin -->
+    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
+
+    <!-- https://github.com/EddyVerbruggen/Custom-URL-scheme -->
+    <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
+      <param name="URL_SCHEME" value="tictactoe" />
+    </gap:plugin>
 </widget>

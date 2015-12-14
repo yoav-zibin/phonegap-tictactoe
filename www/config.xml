@@ -141,36 +141,8 @@
       https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin -->
     <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 
-    <!-- To launch the app by a link like this (you can't type it in directly in the browser! it has to be a link on a webpage):
-        tictactoe://
-        For iOS, see
-          http://docs.build.phonegap.com/en_US/configuring_custom_urls.md.html
-        For android, see
-          https://appurl.org/docs-handling-android
-        Additionally in Android, to avoid restarting the app after rotation (i.e., orientation change),
-        I added this to the activity:
-          android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-    -->
-    <gap:config-file platform="android" parent="/manifest/application" mode="add" >
-      <activity
-          android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-          android:name=".TicTacToe" android:label="@string/app_name"
-          android:screenOrientation="unspecified"
-          android:launchMode="singleTask"
-          android:windowSoftInputMode="adjustUnspecified|stateUnspecified">
-        <intent-filter>
-          <action android:name="android.intent.action.MAIN"/>
-          <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>
-        <intent-filter>
-          <action android:name="android.intent.action.VIEW"/>
-          <category android:name="android.intent.category.DEFAULT"/>
-          <category android:name="android.intent.category.BROWSABLE"/>
-          <data android:scheme="tictactoe"/>
-        </intent-filter>
-      </activity>
-    </gap:config-file>
-    <gap:url-scheme>
-      <scheme>tictactoe</scheme>
-    </gap:url-scheme>
+    <!-- https://github.com/EddyVerbruggen/Custom-URL-scheme -->
+    <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
+      <param name="URL_SCHEME" value="tictactoe" />
+    </gap:plugin>
 </widget>

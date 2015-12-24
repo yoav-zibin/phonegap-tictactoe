@@ -14,6 +14,8 @@
         </style>
     </head>
     <body>
+        <!-- cordova.js is injected by phonegap; so if you try to open index.html locally, it won't find cordova.js -->
+        <script type="text/javascript" src="cordova.js"></script>
         Yoav index<br>
         <script>
         function onDeviceReady() {

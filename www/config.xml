@@ -14,6 +14,8 @@
       <string>1700</string>
     </gap:config-file>
 
+    <content src="http://www.multiplayer-gaming.com/v1/dist/index.html?onlyGameId=5121957813026816-0" />
+
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">
         yoav.zibin@gmail.com
@@ -38,7 +40,7 @@
     <preference name="detect-data-types"          value="false" />          <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="deployment-target"          value="7.0" />            <!-- ios: This sets the IPHONEOS_DEPLOYMENT_TARGET in the build, which tranlsates to the MinimumOSVersion in the ipa Propertly List. -->
-    <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="webviewbounce"              value="false" />          <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->

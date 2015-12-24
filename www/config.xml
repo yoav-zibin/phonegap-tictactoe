@@ -16,8 +16,8 @@
 
     <!--
     http://yoav-zibin.github.io/platform-qa/v1/dist/index.html?onlyGameId=5121957813026816-0
-    -->
     <content src="http://yoav-zibin.github.io/phonegap-tictactoe/www/test.html" />
+    -->
 
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">

@@ -3,7 +3,7 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
-        id          = "com.gamingplatform.tictactoe"
+        id          = "com.gamingplatform.test"
         versionCode = "17"
         version     = "17.0.0" >
     <!-- versionCode is optional and Android only:
@@ -16,8 +16,8 @@
 
     <!--
     http://yoav-zibin.github.io/platform-qa/v1/dist/index.html?onlyGameId=5121957813026816-0
-    <content src="http://yoav-zibin.github.io/phonegap-tictactoe/www/test.html" />
     -->
+    <content src="http://yoav-zibin.github.io/phonegap-tictactoe/www/test.html" />
 
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">

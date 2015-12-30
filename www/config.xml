@@ -55,7 +55,8 @@
         <true/>
     </gap:config-file>
 
-    <gap:plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
+
+    <gap:plugin name="cordova-plugin-splashscreen" gap:platform="ios" source="npm" spec="3.0.0" />
     <!-- I only want splash screen for iOS because it's mandatory. I don't think it's needed.
       Moreover, on Android, the splash screen gets stretched which is ugly,
       unless you use the more complex 9-patch png format.

@@ -27,7 +27,6 @@
         permission on your app, which PhoneGap requires.
     -->
     <preference name="permissions"                value="none"/>
-    <feature name="http://api.phonegap.com/1.0/network" />
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="cli-5.2.0" />
@@ -103,7 +102,7 @@
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.5.2" />
 
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 -->
-    <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.5.0" >
+    <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.4.1" >
         <param name="APP_ID" value="1505618116376825" />
         <param name="APP_NAME" value="Tic Tac Toe" />
     </gap:plugin>

@@ -14,6 +14,8 @@
       <string>1700</string>
     </gap:config-file>
 
+    <content src="http://yoav-zibin.github.io/default-theme/app/index.html?phonegapPlugins=v100" />
+
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">
         yoav.zibin@gmail.com

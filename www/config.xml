@@ -4,14 +4,14 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
         id          = "com.gamingplatform.tictactoe"
-        versionCode = "17"
-        version     = "17.0.0" >
+        versionCode = "18"
+        version     = "18.0.0" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
       see: http://developer.android.com/tools/publishing/versioning.html
     -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-      <string>1700</string>
+      <string>1800</string>
     </gap:config-file>
 
     <content src="http://yoav-zibin.github.io/default-theme/app/index.html?phonegapPlugins=v100&onlyGameId=5125637257822208-1" />

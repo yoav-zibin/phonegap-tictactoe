@@ -107,6 +107,8 @@
         <param name="APP_ID" value="1505618116376825" />
         <param name="APP_NAME" value="Tic Tac Toe" />
     </gap:plugin>
+    <gap:plugin name="cordova-plugin-android-support-v4" gap:platform="android" source="npm" spec="21.0.1" />
+    
 
     <!--
       See: https://github.com/apache/cordova-plugin-whitelist

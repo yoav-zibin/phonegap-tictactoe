@@ -97,10 +97,10 @@
     <icon src="pgbomit/icon-40.png" gap:platform="ios" width="40" height="40" />
     <icon src="pgbomit/icon-80.png" gap:platform="ios" width="80" height="80" />
 
-    <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
+    <!-- see: https://www.npmjs.com/package/phonegap-plugin-push
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.6.1">
       <param name="SENDER_ID" value="24803504516" />
-    </gap:plugin>
+    </gap:plugin> -->
 
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 -->
     <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.4.0" >

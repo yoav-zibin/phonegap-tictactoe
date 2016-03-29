@@ -137,17 +137,4 @@
         <allow-intent href="itms-apps:*" />
     </platform>
 
-    <!-- To take printscreen for sharing/feedback. Requires WRITE_EXTERNAL_STORAGE permission.
-      https://github.com/gitawego/cordova-screenshot.git
-      https://www.npmjs.com/package/com.darktalker.cordova.screenshot -->
-    <gap:plugin name="com.darktalker.cordova.screenshot" source="npm" spec="0.1.3" />
-
-    <!-- To allow easy social sharing using native intents. Requires WRITE_EXTERNAL_STORAGE permission.
-      https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin -->
-    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.0.7" />
-
-    <!-- https://github.com/EddyVerbruggen/Custom-URL-scheme -->
-    <gap:plugin name="cordova-plugin-customurlscheme" source="npm" spec="4.0.0" >
-      <param name="URL_SCHEME" value="tictactoe" />
-    </gap:plugin>
 </widget>

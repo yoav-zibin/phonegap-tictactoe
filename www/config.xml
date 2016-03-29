@@ -102,7 +102,7 @@
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.5.2" />
 
-    <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4  -->
+    <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 -->
     <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.4.0" >
         <param name="APP_ID" value="1505618116376825" />
         <param name="APP_NAME" value="Tic Tac Toe" />

@@ -14,6 +14,8 @@
       <string>1800</string>
     </gap:config-file>
 
+    <content src="http://yoav-zibin.github.io/default-theme/app/index.html?phonegapPlugins=v100&amp;onlyGameId=5125637257822208-1" />
+
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">
         yoav.zibin@gmail.com
@@ -102,13 +104,13 @@
       <param name="SENDER_ID" value="24803504516" />
     </gap:plugin> -->
 
-    <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 -->
+    <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 
     <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.0" >
         <param name="APP_ID" value="1505618116376825" />
         <param name="APP_NAME" value="Tic Tac Toe" />
     </gap:plugin>
     <gap:plugin name="cordova-plugin-android-support-v4" gap:platform="android" source="npm" spec="21.0.1" />
-    
+    -->
 
     <!--
       See: https://github.com/apache/cordova-plugin-whitelist

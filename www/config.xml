@@ -14,7 +14,7 @@
       <string>1800</string>
     </gap:config-file>
 
-    <content src="http://yoav-zibin.github.io/default-theme/app/index.html?phonegapPlugins=v100&amp;onlyGameId=5125637257822208-1" />
+    <content src="http://yoav-zibin.github.io/default-theme/app/index.html?phonegapPlugins=v101&amp;onlyGameId=5125637257822208-1" />
 
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">
@@ -103,8 +103,9 @@
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.5.2" />
 
-    <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 -->
-    <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.4.0" >
+    <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 ; 
+      using specific git version due to this: http://community.phonegap.com/nitobi/topics/sudden-build-error-android -->
+    <gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" >
         <param name="APP_ID" value="1505618116376825" />
         <param name="APP_NAME" value="Tic Tac Toe" />
     </gap:plugin>

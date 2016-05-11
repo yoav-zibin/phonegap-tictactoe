@@ -100,7 +100,7 @@
 
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.6.3">
-      <variable name="SENDER_ID" value="24803504516" />
+        <param name="SENDER_ID" value="24803504516" />
     </gap:plugin>
 
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 ; 

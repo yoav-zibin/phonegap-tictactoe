@@ -13,7 +13,7 @@
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
       <string>1900</string>
     </gap:config-file>
-      
+
     <content src="https://tictactoe.ygame.us/?phonegapPlugins=v101" />
     
     <name>Tic Tac Toe</name>

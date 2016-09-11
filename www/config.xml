@@ -151,4 +151,8 @@
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm" spec="4.2.0" >
       <param name="URL_SCHEME" value="tictactoe" />
     </gap:plugin>
+
+    <!-- https://github.com/floatinghotpot/cordova-plugin-facebookads -->
+    <gap:plugin name="cordova-plugin-facebookads" source="npm" spec="4.7.4" />
+    
 </widget>

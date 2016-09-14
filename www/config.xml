@@ -78,8 +78,29 @@
     <gap:splash src="pgbomit/splash-1536x2048.png" gap:platform="ios" width="1536" height="2048" />
     <gap:splash src="pgbomit/splash-2048x1536.png" gap:platform="ios" width="2048" height="1536" />
 
-    <icon src="icon.png" />
-    
+    <icon src="pgbomit/icon-512.png" width="512" height="512"/>
+    <icon src="pgbomit/icon-57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="pgbomit/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="pgbomit/icon-114.png" gap:platform="ios" width="114" height="114" />
+    <icon src="pgbomit/icon-144.png" gap:platform="ios" width="144" height="144" />
+    <!-- iPhone 6 / 6+ -->
+    <icon src="pgbomit/icon-180.png" gap:platform="ios" width="180" height="180" />
+    <!-- iPhone / iPod Touch  -->
+    <icon src="pgbomit/icon-60.png" gap:platform="ios" width="60" height="60" />
+    <icon src="pgbomit/icon-120.png" gap:platform="ios" width="120" height="120" />
+    <!-- iPad -->
+    <icon src="pgbomit/icon-50.png" gap:platform="ios" width="50" height="50" />
+    <icon src="pgbomit/icon-100.png" gap:platform="ios" width="100" height="100" />
+    <icon src="pgbomit/icon-76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="pgbomit/icon-152.png" gap:platform="ios" width="152" height="152" />
+    <!-- Settings Icon -->
+    <icon src="pgbomit/icon-29.png" gap:platform="ios" width="29" height="29" />
+    <icon src="pgbomit/icon-58.png" gap:platform="ios" width="58" height="58" />
+    <icon src="pgbomit/icon-87.png" gap:platform="ios" width="87" height="87" />
+    <!-- Spotlight Icon -->
+    <icon src="pgbomit/icon-40.png" gap:platform="ios" width="40" height="40" />
+    <icon src="pgbomit/icon-80.png" gap:platform="ios" width="80" height="80" />
+
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.8.1">
         <param name="SENDER_ID" value="24803504516" />

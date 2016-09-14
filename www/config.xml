@@ -78,7 +78,7 @@
     <gap:splash src="pgbomit/splash-1536x2048.png" gap:platform="ios" width="1536" height="2048" />
     <gap:splash src="pgbomit/splash-2048x1536.png" gap:platform="ios" width="2048" height="1536" />
 
-    <icon src="icon.png"/>
+    <icon src="icon.png" />
     
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.8.1">

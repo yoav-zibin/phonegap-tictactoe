@@ -159,6 +159,8 @@
     <!-- We have to use this if we want native ads (can't use mediation for that):
     https://github.com/floatinghotpot/cordova-plugin-facebookads
     <gap:plugin name="cordova-plugin-facebookads" source="npm" spec="4.7.4" />
+    We currently use AdMob pro with mediation to FB ads:
+    https://github.com/floatinghotpot/cordova-admob-pro
      -->
     <gap:plugin name="cordova-plugin-admobpro" source="npm" spec="2.19.1" />
     <gap:plugin name="cordova-plugin-admob-facebook" source="npm" spec="1.0.3" />

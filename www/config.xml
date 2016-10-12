@@ -14,7 +14,7 @@
       <string>20100</string>
     </gap:config-file>
 
-    <content src="https://tictactoe.ygame.us/?phonegapPlugins=v103" />
+    <content src="https://tictactoe.ygame.us/?phonegapPlugins=v104" />
     
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">

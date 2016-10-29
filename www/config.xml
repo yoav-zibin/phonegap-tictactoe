@@ -14,7 +14,7 @@
       <string>20100</string>
     </gap:config-file>
 
-    <content src="https://tictactoe.ygame.us/?phonegapPlugins=v104" />
+    <content src="https://tictactoe.ygame.us/?phonegapPlugins=v103" />
     
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">
@@ -151,14 +151,11 @@
       https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin -->
     <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.1.3" />
 
-    <!-- https://github.com/nordnet/cordova-universal-links-plugin -->
-    <gap:plugin name="cordova-universal-links-plugin" source="npm" spec="1.2.0" >
-    </gap:plugin>
+    <!-- https://github.com/EddyVerbruggen/Custom-URL-scheme -->
     <preference name="AndroidLaunchMode" value="singleInstance" />
-    <universal-links>
-        <ios-team-id value="3B24UCE5E7" />
-        <host name="tictactoe.ygame.us" scheme="https" event="universalLinkEvent" />
-    </universal-links>
+    <gap:plugin name="cordova-plugin-customurlscheme" source="npm" spec="4.2.0" >
+      <param name="URL_SCHEME" value="tictactoe" />
+    </gap:plugin>
 
     <!-- We have to use this if we want native ads (can't use mediation for that):
     https://github.com/floatinghotpot/cordova-plugin-facebookads

@@ -4,17 +4,17 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
         id          = "com.gamingplatform.tictactoe"
-        versionCode = "201"
-        version     = "201.0.0" >
+        versionCode = "203"
+        version     = "203.0.0" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
       see: http://developer.android.com/tools/publishing/versioning.html
     -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-      <string>20100</string>
+      <string>20300</string>
     </gap:config-file>
 
-    <content src="https://tictactoe.ygame.us/?phonegapPlugins=v103" />
+    <content src="https://tictactoe.ygame.us/?phonegapPlugins=v104" />
     
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">
@@ -103,7 +103,7 @@
     <icon src="pgbomit/icon-80.png" gap:platform="ios" width="80" height="80" />
 
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
-    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.8.1">
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.9.2">
         <param name="SENDER_ID" value="24803504516" />
     </gap:plugin>
 

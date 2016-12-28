@@ -107,6 +107,28 @@
         <param name="SENDER_ID" value="24803504516" />
     </gap:plugin>
 
+    <!-- I think the push plugin is adding iOS code that might use the calendar, photos, and bluetooth.
+        So Apple rejects the submission with:
+        This app attempts to access privacy-sensitive data without a usage description. The app's Info.plist must contain an NSCalendarsUsageDescription key with a string value explaining to the user how the app uses this data.
+        (Similarly for NSPhotoLibraryUsageDescription and NSBluetoothPeripheralUsageDescription)
+        So adding this to pass Apple's submission checks (we are not really using calendar, photos, and bluetooth).
+        -->
+    <config-file platform="ios" parent="NSCalendarsUsageDescription" mode="replace">
+    <array>
+        <string>This app uses your calendar</string>
+    </array>
+    </config-file>
+    <config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">
+    <array>
+        <string>This app uses your photo library</string>
+    </array>
+    </config-file>
+    <config-file platform="ios" parent="NSBluetoothPeripheralUsageDescription" mode="replace">
+    <array>
+        <string>This app uses your bluetooth</string>
+    </array>
+    </config-file>
+
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 ; 
       using specific git version due to this: http://community.phonegap.com/nitobi/topics/sudden-build-error-android
       gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" -->

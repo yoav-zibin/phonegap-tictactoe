@@ -34,6 +34,7 @@
     <preference name="phonegap-version"           value="cli-6.3.0" />
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
+    <preference name="EnableViewportScale"        value="true"/>            <!-- ios: EnableViewportScale (boolean, defaults to false): Set to true to allow a viewport meta tag to either disable or restrict the range of user scaling, which is enabled by default. -->
     <preference name="target-device"              value="universal" />      <!-- ios: possible values handset, tablet, or universal -->
     <preference name="prerendered-icon"           value="false" />          <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="detect-data-types"          value="false" />          <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
@@ -114,19 +115,13 @@
         So adding this to pass Apple's submission checks (we are not really using calendar, photos, and bluetooth).
         -->
     <config-file platform="ios" parent="NSCalendarsUsageDescription" mode="replace">
-    <array>
         <string>This app uses your calendar</string>
-    </array>
     </config-file>
     <config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">
-    <array>
         <string>This app uses your photo library</string>
-    </array>
     </config-file>
     <config-file platform="ios" parent="NSBluetoothPeripheralUsageDescription" mode="replace">
-    <array>
         <string>This app uses your bluetooth</string>
-    </array>
     </config-file>
 
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 ; 

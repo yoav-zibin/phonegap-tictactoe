@@ -14,7 +14,7 @@
       <string>20300</string>
     </gap:config-file>
 
-    <content src="https://tictactoe.ygame.us/?phonegapPlugins=v104" />
+    <content src="https://tictactoe.ygame.us/?phonegapPlugins=v105" />
     
     <name>Tic Tac Toe</name>
     <author email="yoav.zibin@gmail.com">
@@ -31,7 +31,7 @@
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="cli-6.3.0" />
+    <preference name="phonegap-version"           value="cli-6.5.0" />
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
     <preference name="EnableViewportScale"        value="true"/>            <!-- ios: EnableViewportScale (boolean, defaults to false): Set to true to allow a viewport meta tag to either disable or restrict the range of user scaling, which is enabled by default. -->
@@ -56,7 +56,7 @@
         <true/>
     </gap:config-file>
 
-    <gap:plugin name="cordova-plugin-splashscreen" gap:platform="ios" source="npm" spec="3.2.2" />
+    <gap:plugin name="cordova-plugin-splashscreen" gap:platform="ios" source="npm" spec="4.0.2" />
     <!-- I only want splash screen for iOS because it's mandatory. I don't think it's needed.
       Moreover, on Android, the splash screen gets stretched which is ugly,
       unless you use the more complex 9-patch png format.
@@ -104,7 +104,7 @@
     <icon src="pgbomit/icon-80.png" gap:platform="ios" width="80" height="80" />
 
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
-    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.9.2">
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.10.0">
         <param name="SENDER_ID" value="24803504516" />
     </gap:plugin>
 
@@ -127,7 +127,7 @@
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 ; 
       using specific git version due to this: http://community.phonegap.com/nitobi/topics/sudden-build-error-android
       gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" -->
-    <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.3">
+    <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.4">
         <param name="APP_ID" value="1505618116376825" />
         <param name="APP_NAME" value="Tic Tac Toe" />
     </gap:plugin>
@@ -139,7 +139,8 @@
     <access origin="*"/>
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" spec="1.2.2" />
+    <!-- https://www.npmjs.com/package/cordova-plugin-whitelist -->
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" spec="1.3.2" />
     <allow-navigation href="http://*/*" />
     <allow-navigation href="https://*/*" />
     <allow-intent href="*" />
@@ -161,8 +162,9 @@
 
     <!-- To allow easy social sharing using native intents. 
       Plugin adds WRITE_EXTERNAL_STORAGE permission, which we don't need, so I remove it below.
-      https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin -->
-    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.1.3" />
+      https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin
+      https://www.npmjs.com/package/cordova-plugin-x-socialsharing -->
+    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.1.7" />
     <config-file platform="android" parent="/manifest" mode="delete">
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     </config-file>
@@ -179,11 +181,7 @@
         </array>
     </config-file>
 
-    <!-- https://github.com/EddyVerbruggen/Custom-URL-scheme -->
     <preference name="AndroidLaunchMode" value="singleInstance" />
-    <gap:plugin name="cordova-plugin-customurlscheme" source="npm" spec="4.2.0" >
-      <param name="URL_SCHEME" value="tictactoe" />
-    </gap:plugin>
 
     <!-- We have to use this if we want native ads (can't use mediation for that):
     https://github.com/floatinghotpot/cordova-plugin-facebookads
@@ -191,7 +189,7 @@
     We currently use AdMob pro with mediation to FB ads:
     https://github.com/floatinghotpot/cordova-admob-pro
      -->
-    <gap:plugin name="cordova-plugin-admobpro" source="npm" spec="2.19.1" />
+    <gap:plugin name="cordova-plugin-admobpro" source="npm" spec="2.28.3" />
     <gap:plugin name="cordova-plugin-admob-facebook" source="npm" spec="1.0.3" />
     
 </widget>

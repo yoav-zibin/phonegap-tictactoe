@@ -3,7 +3,7 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
-        id          = "com.zibiga.classicgames"
+        id          = "com.zibiga.boardgames"
         versionCode = "1"
         version     = "1.0.0" >
     <!-- versionCode is optional and Android only:
@@ -16,7 +16,7 @@
 
     <content src="https://zibiga.com/" />
     
-    <name>77 Classic Games</name>
+    <name>77 Board Games</name>
     <author email="yoav.zibin@gmail.com">
         yoav.zibin@gmail.com
     </author>

@@ -17,8 +17,8 @@
     <content src="https://zibiga.com/" />
     
     <name>77 Board Games</name>
-    <author email="yoav.zibin@gmail.com">
-        yoav.zibin@gmail.com
+    <author email="admin@zibiga.com">
+        admin@zibiga.com
     </author>
 
     <preference name="android-build-tool" value="gradle" />

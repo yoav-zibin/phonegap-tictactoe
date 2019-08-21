@@ -3,7 +3,7 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
-        id          = "com.zibiga.boardgames"
+        id          = "com.zibiga.backgammon"
         versionCode = "1"
         version     = "1.0.0" >
     <!-- versionCode is optional and Android only:
@@ -14,9 +14,9 @@
       <string>100</string>
     </gap:config-file>
 
-    <content src="https://zibiga.com/" />
+    <content src="https://zibiga.com/backgammon/" />
     
-    <name>77 Board Games</name>
+    <name>Backgammon No Ads</name>
     <author email="admin@zibiga.com">
         admin@zibiga.com
     </author>
